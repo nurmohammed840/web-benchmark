@@ -1,0 +1,9 @@
+[package]
+name = "hyper"
+version = "0.1.0"
+authors = ["nur"]
+edition = "2018"
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }

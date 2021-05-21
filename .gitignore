@@ -1,0 +1,7 @@
+# Java-Script
+javascript/node_modules
+javascript/package-lock.json
+
+# Rust
+rust/*/target/
+rust/*/Cargo.lock

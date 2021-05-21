@@ -1,0 +1,8 @@
+[package]
+name = "gotham"
+version = "0.1.0"
+authors = ["nur"]
+edition = "2018"
+
+[dependencies]
+gotham = "0.6.0"
