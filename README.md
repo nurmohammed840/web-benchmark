@@ -15,13 +15,9 @@ looking for ["Which programming language is fastest?"](https://benchmarksgame-te
 Running 10 seconds, 2 threads and 10 connections, (Fri, May 21, 2021)
 ```
 
-<<<<<<< HEAD
 # Rust v1.52.1
 
-### Hyper (https://github.com/hyperium/hyper) v0.14
-=======
 ### [Hyper](https://github.com/hyperium/hyper) v0.14
->>>>>>> c4d2f4ad633d841c5b612e0d93b4bf10d271d71b
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
