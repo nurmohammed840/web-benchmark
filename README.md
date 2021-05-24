@@ -7,17 +7,21 @@ looking for ["Which programming language is fastest?"](https://benchmarksgame-te
 
 ## Tools
 
-Envirenment: `Ubantu-20.04 (WSL)`
-Processor: [Intel Celeron N4000](https://ark.intel.com/content/www/us/en/ark/products/128988/intel-celeron-processor-n4000-4m-cache-up-to-2-60-ghz.html)
-Benchmark tool ([wrk](https://github.com/wg/wrk)): `wrk --latency -t2 -c10 -d10 <url>`
+- Processor: [Intel Celeron N4000](https://ark.intel.com/content/www/us/en/ark/products/128988/intel-celeron-processor-n4000-4m-cache-up-to-2-60-ghz.html)
+- Envirenment: `Ubantu-20.04 (WSL)`
+- Benchmark tool ([wrk](https://github.com/wg/wrk)): `wrk --latency -t2 -c10 -d10 <url>`
 
 ```txt
 Running 10 seconds, 2 threads and 10 connections, (Fri, May 21, 2021)
 ```
 
+<<<<<<< HEAD
 # Rust v1.52.1
 
 ### Hyper (https://github.com/hyperium/hyper) v0.14
+=======
+### [Hyper](https://github.com/hyperium/hyper) v0.14
+>>>>>>> c4d2f4ad633d841c5b612e0d93b4bf10d271d71b
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -112,7 +116,11 @@ Requests/sec:  18776.92
 Transfer/sec:  2.76MB
 ```
 
+<<<<<<< HEAD
 ### [Nickel](https://nickel-org.github.io/) v0.11.0
+=======
+### [Nickel](https://github.com/nickel-org/nickel.rs) v0.11.0
+>>>>>>> c4d2f4ad633d841c5b612e0d93b4bf10d271d71b
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -237,7 +245,7 @@ Requests/sec:   8498.00
 Transfer/sec:   414.94KB
 ```
 
-### Oak.js (Deno) v7.5.0
+### [Oak.js](https://github.com/oakserver/oak) (Deno) v7.5.0
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -275,7 +283,7 @@ Requests/sec:   8812.16
 Transfer/sec:   0.93MB
 ```
 
-### Koa.js (Node) v2.13.1
+### [Koa.js](https://github.com/koajs/koa) (Node) v2.13.1
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -294,7 +302,7 @@ Requests/sec:   6706.19
 Transfer/sec:   0.95MB
 ```
 
-### Express.js (Node) v4.17.1
+### [Express.js](https://github.com/expressjs/express) (Node) v4.17.1
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
   Latency     2.19ms  682.71us  12.89ms   90.07%
