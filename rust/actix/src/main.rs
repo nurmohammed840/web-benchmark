@@ -7,10 +7,11 @@ async fn index(_info: web::Path<()>) -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    println!("Actix-Web, http://127.0.0.1:8080");
+    let addr = "127.0.0.1:8080";
+    println!("Actix-Web, http://{}", addr);
 
     HttpServer::new(|| App::new().service(index))
-        .bind("127.0.0.1:8080")?
+        .bind(addr)?
         .run()
         .await
 }

@@ -1,3 +1,10 @@
+# Note 
+Http implementation and web framework benchmark for various programing language.
+
+Don't compare language performence by banchmark data. Because efficiency depend on HTTP implementation and optimization (not only, efficiency of programing language).
+
+looking for ["Which programming language is fastest?"](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)  
+
 ## Tools
 
 Envirenment: `Ubantu-20.04 (WSL)`
@@ -7,6 +14,8 @@ Benchmark tool ([wrk](https://github.com/wg/wrk)): `wrk --latency -t2 -c10 -d10 
 ```txt
 Running 10 seconds, 2 threads and 10 connections, (Fri, May 21, 2021)
 ```
+
+# Rust v1.52.1
 
 ### Hyper (https://github.com/hyperium/hyper) v0.14
 
@@ -84,7 +93,7 @@ Requests/sec:  20376.83
 Transfer/sec:  3.23MB
 ```
 
-### [Tiny-Http]() v0.6
+### [Tiny-Http](https://github.com/tiny-http/tiny-http) v0.6
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -103,7 +112,7 @@ Requests/sec:  18776.92
 Transfer/sec:  2.76MB
 ```
 
-### [Nickel]() v0.11.0
+### [Nickel](https://nickel-org.github.io/) v0.11.0
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -122,7 +131,7 @@ Requests/sec:  13637.91
 Transfer/sec:  1.90MB
 ```
 
-### [Tide]() v0.16.0
+### [Tide](https://github.com/http-rs/tide) v0.16.0
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -159,6 +168,45 @@ Socket errors: connect 0, read 84396, write 0, timeout 0
 
 Requests/sec:   8422.24
 Transfer/sec:   1.17MB
+```
+
+# Go v1.16 linux
+
+## [fasthttp](https://github.com/valyala/fasthttp) v1.25.0
+```txt
+Thread Stats   Avg      Stdev     Max   +/- Stdev
+  Latency     0.85ms    1.85ms  30.05ms   91.49%
+  Req/Sec    12.72k     2.78k   19.81k    63.00%
+
+Latency Distribution
+   50%  255.00us
+   75%  502.00us
+   90%    2.23ms
+   99%    9.59ms
+
+253871 requests in 10.04s, 36.32MB read
+
+Requests/sec:  25282.84
+Transfer/sec:      3.62MB
+```
+
+## net/http (std)
+
+```txt
+Thread Stats   Avg      Stdev     Max   +/- Stdev
+  Latency     1.97ms    4.18ms  68.28ms   90.20%
+  Req/Sec     7.30k     1.44k   12.34k    70.50%
+
+Latency Distribution
+   50%  472.00us
+   75%    1.28ms
+   90%    6.00ms
+   99%   20.46ms
+
+145952 requests in 10.07s, 18.09MB read
+
+Requests/sec:  14491.89
+Transfer/sec:      1.80MB
 ```
 
 # Java-Script
