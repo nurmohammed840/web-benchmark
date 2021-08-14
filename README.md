@@ -214,50 +214,44 @@ Transfer/sec:      1.80MB
 ```
 
 # Java-Script
-Javascript is single Threaded mean, Only single core being used.
-Those test run on a single procress. (not dual)
+Javascript is single Threaded mean, Those test run on a single procress.
 
-## [Deno](https://deno.land/) v1.10.2
-```
-deno 1.10.2 (release, x86_64-unknown-linux-gnu)
-v8 9.1.269.27
-typescript 4.2.2
-```
+## [Deno](https://deno.land/) v1.3
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
-  Latency     1.19ms  480.42us  11.51ms   96.01%
-  Req/Sec     4.27k   444.91     4.98k    56.50%
-  
-Latency Distribution
-   50%    1.08ms
-   75%    1.27ms
-   90%    1.38ms
-   99%    3.59ms
-  
-84986 requests in 10.00s, 4.05MB read
+  Latency     1.09ms  751.00us  25.69ms   97.35%
+  Req/Sec     4.81k   549.90     5.66k    90.00%
 
-Requests/sec:   8498.00
-Transfer/sec:   414.94KB
+Latency Distribution
+   50%    0.96ms
+   75%    1.01ms
+   90%    1.20ms
+   99%    3.07ms
+
+95650 requests in 10.02s, 11.58MB read
+
+Requests/sec:   9550.60
+Transfer/sec:   1.16MB
 ```
 
-### [Oak.js](https://github.com/oakserver/oak) (Deno) v7.5.0
+### [Oak.js](https://github.com/oakserver/oak) (Deno) v8.0.0
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
-  Latency     1.70ms  413.07us  11.74ms   95.80%
-  Req/Sec     2.93k   171.60     3.28k    72.50%
-  
-Latency Distribution
-   50%    1.62ms
-   75%    1.73ms
-   90%    1.89ms
-   99%    3.40ms
+  Latency     1.93ms    0.90ms  18.06ms   95.31%
+  Req/Sec     2.68k   229.50     3.10k    81.00%
 
-58302 requests in 10.01s, 5.12MB read
-  
-Requests/sec:   5822.67
-Transfer/sec:   523.13KB
+Latency Distribution
+   50%    1.79ms
+   75%    1.87ms
+   90%    1.99ms
+   99%    6.32ms
+
+53443 requests in 10.01s, 6.57MB read
+
+Requests/sec:   5338.10
+Transfer/sec:   672.48KB
 ```
 
 ## [Node](https://nodejs.org/) v10.19.0
