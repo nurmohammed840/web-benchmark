@@ -1,4 +1,4 @@
-# Note 
+## Note
 Http implementation and web framework benchmark for various programing language.
 
 Don't compare language performence by banchmark data. Because efficiency depend on HTTP implementation and optimization (not only, efficiency of programing language).
@@ -112,11 +112,7 @@ Requests/sec:  18776.92
 Transfer/sec:  2.76MB
 ```
 
-<<<<<<< HEAD
-### [Nickel](https://nickel-org.github.io/) v0.11.0
-=======
 ### [Nickel](https://github.com/nickel-org/nickel.rs) v0.11.0
->>>>>>> c4d2f4ad633d841c5b612e0d93b4bf10d271d71b
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -176,7 +172,7 @@ Transfer/sec:   1.17MB
 
 # Go v1.16 linux
 
-## [fasthttp](https://github.com/valyala/fasthttp) v1.25.0
+### [fasthttp](https://github.com/valyala/fasthttp) v1.25.0
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
   Latency     0.85ms    1.85ms  30.05ms   91.49%
@@ -194,7 +190,7 @@ Requests/sec:  25282.84
 Transfer/sec:      3.62MB
 ```
 
-## net/http (std)
+### net/http (std)
 
 ```txt
 Thread Stats   Avg      Stdev     Max   +/- Stdev
